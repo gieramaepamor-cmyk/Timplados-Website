@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HEADER: Handled by Header person -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timplados Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HEADER & NAVIGATION: Header person -->
+<nav>
+    <div class="logo">
+        <!-- IMAGE ADDER -->
+        <img src="images/logo.png" alt="Timplados Logo" />
+        <span>TIMPLADOS</span>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#specialty">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+    </ul>
+</nav>
+
+<!-- HOME SECTION: Content Creator + Button Maker -->
+<section class="home" id="home">
+    <header>
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>TIMPLADOS</h1>
+            <p>RESTAURANT</p>
+            <br>
+            <!-- BUTTON MAKER -->
+            <a href="#reservation" class="btn">Book a Reservation</a>
+        </div>
+    </header>
+</section>
+
+<!-- SPECIALTY SECTION: Content Creator + Image Adder -->
+<section class="specialty" id="specialty">
+    <h2>Our Signature Dishes</h2>
+    <h6>Experience the rich flavors of the Philippines through our Signature Dishes — a heartfelt collection of Filipino favorites, reimagined with a touch of creativity and made with ingredients that bring comfort and nostalgia in every bite.
+    </h6>
+    <div class="dishes">
+        <!-- Each dish: Image Adder + Content Creator -->
+        <div class="dish">
+            <img src="images/karekare.jpg" alt="Oxtail Kare-Kare" />
+            <h3>OXTAIL KARE-KARE</h3>
+            <p>A rich peanut stew made with tender oxtail, egand vegetables, served with a side of savory bagoong (shrimp paste).</p>
+        </div>
+        <div class="dish">
+            <img src="images/sinigang.jpg" alt="Sinigang na Baka" />
+            <h3>BEEF SINIGANG</h3>
+            <p>A hearty tamarind-based soup with beef chunks and fresh vegetables, known for its comforting sour and savory flavor.</p>
+        </div>
+        <div class="dish">
+            <img src="images/bulalo.jpg" alt="Bulalo" />
+            <h3>BULALO</h3>
+            <p>A flavorful bone marrow beef soup, slow-cooked with corn, cabbage, and potatoes—perfect for a warm, satisfying meal.</p>
+        </div>
+        <div class="dish">
+            <img src="images/adobo.jpg" alt="Pork Adobo" />
+            <h3>PORK ADOBO</h3>
+            <p>Crispy chopped pork cheeks and ears sautéed with onions, chili, and a hint of calamansi, served sizzling hot for a bold, crunchy bite.</p>
+        </div>
+        <div class="dish">
+            <img src="images/sisig.jpg" alt="Pork Sisig" />
+            <h3>PORK SISIG</h3>
+            <p>Crispy chopped pork cheeks and ears sautéed with onions, chili, and a hint of calamansi, served sizzling hot for a bold, crunchy bite.</p>
+        </div>
+        <div class="dish">
+            <img src="images/tinola.jpg" alt="Tinolang Manok" />
+            <h3>CHICKEN TINOLA</h3>
+            <p>A light and comforting chicken soup simmered with ginger, green papaya, and chili leaves—perfectly seasoned for a soothing, home-style taste.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TAGLINE SECTION: Content Creator -->
+<section class="tagline" id="tagline">
+    <p>Seasoned with <span class="orange">heritage</span>. Served with <span class="heart">heart</span>.</p>
+</section>
+
+<!-- ABOUT SECTION: Content Creator + Image Adder -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/about.jpg" alt="Boodle Fight Table" />
+    </div>
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+            At Timplados, we believe great Filipino food starts with the perfect timpla — that magical balance of flavor, soul, and story.
+            <br><br>
+            Our kitchen blends heirloom recipes with modern twists that honor tradition while exciting the palate. Each dish is crafted with care — bold in spice, rich in culture, and always seasoned with heart.
+            <br><br>
+            <strong>Timplados. Seasoned with heritage. Served with heart.</strong>
+        </p>
+    </div>
+</section>
+
+<!-- RESERVATION SECTION: Button Maker + Content Creator -->
+<section class="dine" id="reservation">
+    <h2>Ready to Dine?</h2>
+    <p>
+        Experience the bold, balanced flavors of Filipino cuisine at Timplados — where every meal is a celebration of heritage and heart.
+        <br><br>
+        Use the form below to book your table. For same-day or group reservations, call <strong>(0917) 123-4567</strong>.
+    </p>
+
+    <!-- BUTTON MAKER -->
+    <form action="#success">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Contact Number" required>
+        <input type="date" placeholder="Date" required>
+            <select required>
+                <option disabled selected>Select Time</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+            </select>
+        <input type="number" placeholder="Number of Guests" required>
+        <button type="submit">Book a Reservation</button>
+    </form>
+
+    <!-- BUTTON MAKER -->
+    <div id="success" class="popup-modal">
+        <div class="popup-content">
+            <h3>✅ Reservation Confirmed</h3>
+            <p>Thank you for your reservation. A confirmation email with additional details will be sent to you shortly.</p>
+            <a href="#" class="close-button">Close</a>
+        </div>
+    </div>
+
+    <!-- CONTENT CREATOR -->
+    <div class="socials">
+        <a href="#"><b>Instagram / X:</b> @timplados_ph</a>
+        <a href="#"><b>Facebook:</b> Timplados Restaurant</a>
+    </div>
+</section>
+
+<!-- FOOTER: Header person -->
+<footer>
+    &copy; 2025 Timplados Restaurant. All rights reserved.
+</footer>
+
+</body>
+</html>
